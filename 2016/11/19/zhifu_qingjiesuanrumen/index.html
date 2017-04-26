@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://static.zybuluo.com/sdsdsw555/rtqwk1acvvnlmocwh4o9onwv/clearing-kemu.jpg">
 <meta property="og:image" content="http://static.zybuluo.com/sdsdsw555/pfxzyqhqvtwdweeij0l2gn2e/clearing-detail.jpg">
 <meta property="og:image" content="http://static.zybuluo.com/sdsdsw555/k6wf4uqlpcyfcxxbblhgj6ps/clearing-account.jpg">
-<meta property="og:updated_time" content="2017-04-26T14:57:46.556Z">
+<meta property="og:updated_time" content="2017-04-26T15:28:16.174Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="支付清结算之基本概念和入门（转）">
 <meta name="twitter:description" content="搞明白了清结算，你就明白了支付业务是怎么运转的。 从技术上来说，清结算并不是最难的，风控、信用，实施起来比清结算难多了。但从业务的角度来说，清结算可以说是最难理解的支付业务过程了。 它牵扯到支付所有相关的概念。为了降低理解难度，我们从常见的支付行为入手，逐步分析清结算如何进行。
@@ -174,6 +174,7 @@
       
         <p>搞明白了清结算，你就明白了支付业务是怎么运转的。 从技术上来说，清结算并不是最难的，风控、信用，实施起来比清结算难多了。但从业务的角度来说，清结算可以说是最难理解的支付业务过程了。 它牵扯到支付所有相关的概念。为了降低理解难度，我们从常见的支付行为入手，逐步分析清结算如何进行。</p>
 <h2 id="支付流程"><a href="#支付流程" class="headerlink" title="支付流程"></a>支付流程</h2><p>先说个比较简单的支付场景，用户（姑且称他为小明）用绑定的银行卡（用宇宙第一大行工行为例）来购买某电商公司（老熊公司）的产品。小明需要先在老熊公司网站上完成银行卡绑定的操作，绑卡的过程参见之前的文档支付系统之绑卡、签约和身份验证。绑卡以后，就可以使用这个卡来购买商品。 首先是挑选商品和下单，其后是执行支付。下单之前的流程不做介绍， 我们从支付开始，来说明支付过程中的清结算问题。 为了简化，我们先从比较简单的同渠道、公司内购买的场景来开始。商品也先假定为虚拟产品，比如会员卡。 为了实现这个流程，有一些前置的操作需要完成：</p>
+<a id="more"></a>
 <ul>
 <li>老熊公司已经对接了工行的快捷支付接口。通过这个接口，可以实现绑卡（签约）、支付、退款、查单等操作。如何对接，参见文档支付系统之银行卡支付。</li>
 <li>老熊公司已经按照工行的要求，在工行开了对公账户。老熊公司通过工行接口的所有收款、退款等资金往来，都发生在这个账户上。</li>
