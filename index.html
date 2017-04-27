@@ -72,12 +72,6 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 			</div>
 		</nav>
 	</header>		
@@ -111,12 +105,6 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 				</div>
 			</nav>
 
@@ -142,6 +130,73 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-quanxian_jianjie" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/19/quanxian_jianjie/">后台系统高可用权限设计</a>
+    </h1>
+  
+
+        
+        <a href="/2016/12/19/quanxian_jianjie/" class="archive-article-date">
+  	<time datetime="2016-12-19T06:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="相关业务简介"><a href="#相关业务简介" class="headerlink" title="相关业务简介"></a>相关业务简介</h2><p>权限角色模块是公司业务后台不可缺少的模块，一般情况下，公司业务是高速发展的，业务的变化随着时间的推进也会变化很大，所以，我们在做权限系统最初设计时，尽量做到模块高可用，避免不必要的返工，尽量节约项目开发成本。</p>
+<h2 id="高可用权限系统简介"><a href="#高可用权限系统简介" class="headerlink" title="高可用权限系统简介"></a>高可用权限系统简介</h2><p>做了几年的产品，结合之前的业务模型，我抽象了一个高可用，适用与任何业务场景的权限模块设计。</p>
+<p>做权限系统前，先了解一个概念：<strong>任何一个后台操作都是对数据库进行增删改查</strong><br><img src="http://static.zybuluo.com/sdsdsw555/qr200wjxd4kbpq3h8iey7i62/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5.png" alt="数据库增删改查.png-14.7kB"></p>
+        
+          <a class="article-more-a" href="/2016/12/19/quanxian_jianjie/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">后台</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">权限</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/19/quanxian_jianjie/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
   
     <article id="post-zhifu_qingjiesuanrumen" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -363,6 +418,14 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">后台</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">权限</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">支付</a>
